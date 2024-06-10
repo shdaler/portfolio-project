@@ -148,16 +148,16 @@ svg * {
 :root {
   --color-dark: #0f1624;
   --color-light: #ffffff;
-  --color-accent: linear-gradient(90deg, #13adc7 0%, #6978d1 67%, #945dd6 100%);
+  --color-accent: linear-gradient(
+    270deg,
+    #13adc7 0%,
+    #6978d1 67%,
+    #945dd6 100%
+  );
   --color-gray: #929eb0;
-  --border: 1px solid
-    linear-gradient(
-      90deg,
-      rgba(19, 173, 199, 1) 0%,
-      rgba(105, 120, 209, 1) 67%,
-      rgba(148, 93, 214, 1) 100%
-    );
+  --border: 1px solid var(--color-accent);
   --border-radius: 25px;
   --border-radius-large: 83px;
   --shadow: 0px 12px 30px 0px var(--color-accent);
+  --drop-shadow: drop-shadow(0px 10px 30px rgba(0, 178, 255, 0.35));
 }/*# sourceMappingURL=styles.css.map */

@@ -1,7 +1,1 @@
-@import "fonts", "normalize", "utils", "media", "mixins", "variables", "globals";
-
-h1 {
-  @include mobile {
-    color: aqua;
-  }
-}
+@import "fonts", "normalize", "mixins", "media", "variables", "utils", "globals";

@@ -274,23 +274,23 @@ h3 {
   -moz-column-gap: 80px;
        column-gap: 80px;
 }
-.header__menu-list-link {
+.header__menu-link {
   position: relative;
   display: inline-flex;
   align-items: center;
   height: 48px;
 }
 @media (hover: hover) {
-  .header__menu-list-link:hover::after {
+  .header__menu-link:hover::after {
     width: 100%;
   }
 }
 @media (hover: none) {
-  .header__menu-list-link:active::after {
+  .header__menu-link:active::after {
     width: 100%;
   }
 }
-.header__menu-list-link::after {
+.header__menu-link::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -298,7 +298,7 @@ h3 {
   translate: -50%;
   width: 0;
   height: 2px;
-  background-color: var(--color-light);
+  background-color: currentColor;
   transition-duration: inherit;
 }
 .header__soc1als {

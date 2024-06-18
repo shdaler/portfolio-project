@@ -23,12 +23,30 @@
       display: inline-flex;
       align-items: center;
       height: 48px;
+
+      @include hover {
+        &::after {
+          width: 100%;
+        }
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        translate: -50%;
+        width: 0;
+        height: 2px;
+        background-color: currentColor;
+        transition-duration: inherit;
+      }
     }
   }
-}
 
-&__soc1als {
-  display: flex;
-  align-items: center;
-  column-gap: 23px;
+  &__soc1als {
+    display: flex;
+    align-items: center;
+    column-gap: 23px;
+  }
 }

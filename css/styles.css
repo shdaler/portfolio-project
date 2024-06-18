@@ -252,4 +252,58 @@ h2 {
 
 h3 {
   font-size: clamp(16px, 1.5625vw, 30px);
+}
+
+.header {
+  padding-top: 60px;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 156px;
+       column-gap: 156px;
+}
+.header__menu {
+  margin-right: auto;
+  font-size: 18px;
+}
+.header__menu-list {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+}
+.header__menu-list-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  height: 48px;
+}
+@media (hover: hover) {
+  .header__menu-list-link:hover::after {
+    width: 100%;
+  }
+}
+@media (hover: none) {
+  .header__menu-list-link:active::after {
+    width: 100%;
+  }
+}
+.header__menu-list-link::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  translate: -50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-light);
+  transition-duration: inherit;
+}
+.header__soc1als {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 23px;
+       column-gap: 23px;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,34 @@
+.header {
+  padding-top: 60px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 156px;
+  }
+
+  &__menu {
+    margin-right: auto;
+    font-size: 18px;
+
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: 80px;
+    }
+
+    &-link {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      height: 48px;
+    }
+  }
+}
+
+&__soc1als {
+  display: flex;
+  align-items: center;
+  column-gap: 23px;
+}

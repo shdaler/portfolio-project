@@ -1,6 +1,10 @@
 .header {
   padding-top: 60px;
 
+  @include desktop {
+    padding-top: 30px;
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;

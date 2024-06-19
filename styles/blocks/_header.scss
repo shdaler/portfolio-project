@@ -10,16 +10,42 @@
     justify-content: space-between;
     align-items: center;
     column-gap: 156px;
+
+    @include tablet {
+      column-gap: 126px;
+    }
+
+    @include mobile {
+      column-gap: 100px;
+    }
+  }
+
+  &__logo {
+    @include tablet {
+      max-width: 130px;
+    }
   }
 
   &__menu {
     margin-right: auto;
     font-size: 18px;
 
+    @include desktop {
+      font-size: 16px;
+    }
+
+    @include tablet {
+      font-size: 15px;
+    }
+
     &-list {
       display: flex;
       align-items: center;
       column-gap: 80px;
+
+      @include desktop {
+        column-gap: 40px;
+      }
     }
 
     &-link {
@@ -52,5 +78,10 @@
     display: flex;
     align-items: center;
     column-gap: 23px;
+    &-item {
+      @include tablet {
+        color: red;
+      }
+    }
   }
 }

@@ -75,12 +75,14 @@
   }
 
   &__soc1als {
-    display: flex;
-    align-items: center;
-    column-gap: 23px;
+    &-list {
+      display: flex;
+      align-items: center;
+      column-gap: 23px;
+    }
     &-item {
       @include tablet {
-        color: red;
+        max-width: 20px;
       }
     }
   }

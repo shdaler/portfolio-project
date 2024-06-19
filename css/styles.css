@@ -339,7 +339,7 @@ h3 {
   background-color: currentColor;
   transition-duration: inherit;
 }
-.header__soc1als {
+.header__soc1als-list {
   display: flex;
   align-items: center;
   -moz-column-gap: 23px;
@@ -347,6 +347,6 @@ h3 {
 }
 @media (max-width: 1023px) {
   .header__soc1als-item {
-    color: red;
+    max-width: 20px;
   }
 }/*# sourceMappingURL=styles.css.map */

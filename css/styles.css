@@ -261,6 +261,17 @@ h3 {
   width: 48px;
   aspect-ratio: 1;
   position: relative;
+  border-radius: var(--border-radius-large);
+}
+@media (hover: hover) {
+  .burger-button:hover {
+    background-color: purple;
+  }
+}
+@media (hover: none) {
+  .burger-button:active {
+    background-color: purple;
+  }
 }
 .burger-button::after {
   position: absolute;
@@ -271,7 +282,8 @@ h3 {
   width: 50%;
   height: 2px;
   background-color: var(--color-light);
-  border-radius: 10px;
+  border-radius: 20px;
+  box-shadow: 0px -8px var(--color-light), 0px 8px var(--color-light);
 }
 
 .header {

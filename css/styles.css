@@ -271,19 +271,24 @@ h3 {
 }
 @media (max-width: 1023px) {
   .header__inner {
-    -moz-column-gap: 126px;
-         column-gap: 126px;
-  }
-}
-@media (max-width: 767px) {
-  .header__inner {
     -moz-column-gap: 100px;
          column-gap: 100px;
   }
 }
+@media (max-width: 767px) {
+  .header__inner {
+    -moz-column-gap: 80px;
+         column-gap: 80px;
+  }
+}
 @media (max-width: 1023px) {
   .header__logo {
-    max-width: 130px;
+    max-width: 125px;
+  }
+}
+@media (max-width: 767px) {
+  .header__logo {
+    max-width: 118px;
   }
 }
 .header__menu {

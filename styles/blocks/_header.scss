@@ -12,17 +12,20 @@
     column-gap: 156px;
 
     @include tablet {
-      column-gap: 126px;
+      column-gap: 100px;
     }
 
     @include mobile {
-      column-gap: 100px;
+      column-gap: 80px;
     }
   }
 
   &__logo {
     @include tablet {
-      max-width: 130px;
+      max-width: 125px;
+    }
+    @include mobile {
+      max-width: 118px;
     }
   }
 

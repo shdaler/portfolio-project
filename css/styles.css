@@ -254,6 +254,26 @@ h3 {
   font-size: clamp(16px, 1.5625vw, 30px);
 }
 
+.burger-button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  width: 48px;
+  aspect-ratio: 1;
+  position: relative;
+}
+.burger-button::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: var(--color-light);
+  border-radius: 10px;
+}
+
 .header {
   padding-top: 60px;
 }

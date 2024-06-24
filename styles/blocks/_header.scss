@@ -12,7 +12,11 @@
     column-gap: 156px;
 
     @include tablet {
-      column-gap: 100px;
+      column-gap: 130px;
+    }
+
+    @include mobile-big {
+      column-gap: 82px;
     }
 
     @include mobile {
@@ -22,10 +26,7 @@
 
   &__logo {
     @include tablet {
-      max-width: 125px;
-    }
-    @include mobile {
-      max-width: 118px;
+      max-width: 163px;
     }
   }
 
@@ -39,6 +40,10 @@
 
     @include tablet {
       font-size: 15px;
+    }
+
+    @include mobile-big {
+      font-size: 14px;
     }
 
     &-list {
@@ -88,7 +93,7 @@
     }
     &-item {
       @include tablet {
-        max-width: 20px;
+        max-width: 22px;
       }
     }
   }

@@ -46,6 +46,9 @@
       @include desktop {
         column-gap: 40px;
       }
+      @include tablet {
+        column-gap: 35px;
+      }
     }
 
     &-link {

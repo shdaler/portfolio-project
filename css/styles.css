@@ -312,6 +312,12 @@ h3 {
          column-gap: 40px;
   }
 }
+@media (max-width: 1023px) {
+  .header__menu-list {
+    -moz-column-gap: 35px;
+         column-gap: 35px;
+  }
+}
 .header__menu-link {
   position: relative;
   display: inline-flex;

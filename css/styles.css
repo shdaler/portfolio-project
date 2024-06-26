@@ -414,4 +414,11 @@ h3 {
 .mobile-overlay:modal {
   max-width: 100%;
   max-height: 100%;
+}
+.mobile-overlay__close-button-wrapper {
+  display: flex;
+  justify-content: end;
+}
+.mobile-overlay__link {
+  color: var(--color-dark);
 }/*# sourceMappingURL=styles.css.map */

@@ -79,7 +79,7 @@
         translate: -50%;
         width: 0;
         height: 2px;
-        background-color: currentColor;
+        background-color: var(--color-accent);
         transition-duration: inherit;
       }
     }

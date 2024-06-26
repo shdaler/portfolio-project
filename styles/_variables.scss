@@ -3,9 +3,9 @@
   --color-light: #ffffff;
   --color-accent: linear-gradient(
     270deg,
-    #13adc7 0%,
-    #6978d1 67%,
-    #945dd6 100%
+    #13adc9 0%,
+    #6b7ad1 67%,
+    #935cd6 100%
   );
   --color-gray: #929eb0;
 
@@ -14,7 +14,7 @@
   --border-radius-large: 83px;
 
   --shadow: 0px 12px 30px 0px var(--color-accent);
-  --drop-shadow: drop-shadow(0px 10px 30px rgba(0, 178, 255, 0.35));
+  --drop-shadow: drop-shadow(0px 10px 30px #00b2ff59);
 
   --font-family-base: "Poppins", sans-serif;
 

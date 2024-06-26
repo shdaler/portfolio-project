@@ -294,6 +294,11 @@ h3 {
     padding-top: 30px;
   }
 }
+@media (max-width: 767px) {
+  .header {
+    padding-top: 18px;
+  }
+}
 .header__inner {
   display: flex;
   justify-content: space-between;

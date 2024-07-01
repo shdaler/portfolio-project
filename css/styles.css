@@ -254,6 +254,12 @@ h3 {
   font-size: clamp(16px, 1.5625vw, 30px);
 }
 
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .burger-button {
   padding: 0;
   background-color: transparent;
@@ -282,7 +288,7 @@ h3 {
   width: 50%;
   height: 2px;
   background-color: var(--color-light);
-  border-radius: 20px;
+  border-radius: 5px;
   box-shadow: 0px -8px var(--color-light), 0px 8px var(--color-light);
 }
 
@@ -405,11 +411,56 @@ h3 {
   }
 }
 
+.cross-button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  width: 48px;
+  aspect-ratio: 1;
+  position: relative;
+  border-radius: var(--border-radius-large);
+}
+@media (hover: hover) {
+  .cross-button:hover {
+    background-color: purple;
+  }
+  .cross-button:hover::before, .cross-button:hover::after {
+    content: "";
+    background-color: #ffffff;
+  }
+}
+@media (hover: none) {
+  .cross-button:active {
+    background-color: purple;
+  }
+  .cross-button:active::before, .cross-button:active::after {
+    content: "";
+    background-color: #ffffff;
+  }
+}
+.cross-button::before, .cross-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 11px;
+  width: 53%;
+  height: 2px;
+  background-color: var(--color-dark);
+  border-radius: 5px;
+}
+.cross-button::before {
+  rotate: 45deg;
+}
+.cross-button::after {
+  rotate: -45deg;
+}
+
 .mobile-overlay {
   width: 100%;
   height: 100%;
   margin: 0;
-  border-radius: none;
+  padding: 18px 20px;
+  border: none;
 }
 .mobile-overlay:modal {
   max-width: 100%;
@@ -418,6 +469,14 @@ h3 {
 .mobile-overlay__close-button-wrapper {
   display: flex;
   justify-content: end;
+}
+.mobile-overlay__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 30px;
+  min-height: 80vh;
 }
 .mobile-overlay__link {
   color: var(--color-dark);

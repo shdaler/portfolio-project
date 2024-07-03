@@ -263,6 +263,18 @@ h3 {
   font-size: 18px;
   color: var(--color-light);
   background: var(--color-accent);
+  border: var(--border);
+  border-radius: var(--border-radius-large);
+}
+@media (hover: hover) {
+  .button:hover {
+    box-shadow: 0px 10px 30px 0px rgba(0, 178, 255, 0.35);
+  }
+}
+@media (hover: none) {
+  .button:active {
+    box-shadow: 0px 10px 30px 0px rgba(0, 178, 255, 0.35);
+  }
 }
 
 .burger-button {

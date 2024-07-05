@@ -505,8 +505,14 @@ h3 {
 
 .hero {
   display: flex;
+  flex-direction: column;
+}
+.hero__main {
+  display: flex;
   justify-content: space-between;
   align-items: start;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
 .hero__body {
   display: flex;

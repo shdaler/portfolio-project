@@ -514,6 +514,12 @@ h3 {
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
+@media (max-width: 1023px) {
+  .hero__image {
+    max-width: 40%;
+    height: auto;
+  }
+}
 .hero__body {
   display: flex;
   flex-direction: column;

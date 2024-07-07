@@ -9,7 +9,11 @@
     column-gap: 30px;
   }
 
-  img {
+  &__image {
+    @include tablet {
+      max-width: 40%;
+      height: auto;
+    }
   }
 
   &__body {

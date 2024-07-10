@@ -7,12 +7,21 @@
     justify-content: space-between;
     align-items: start;
     column-gap: 30px;
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   &__image {
     @include tablet {
-      max-width: 40%;
+      max-width: 50%;
       height: auto;
+    }
+
+    @include mobile {
+      order: -1;
+      width: 100%;
+      max-width: 100%;
     }
   }
 
@@ -22,10 +31,18 @@
     align-items: start;
     max-width: 700px;
     row-gap: 35px;
+
+    @include mobile {
+      display: contents;
+    }
   }
 
   &__title {
     color: var(--color-light);
+    @include mobile {
+      order: -2;
+      margin-bottom: 16px;
+    }
   }
 
   .gradient {
@@ -39,5 +56,9 @@
   &__description {
     font-size: 18px;
     line-height: normal;
+    @include mobile {
+      order: -1;
+      margin-bottom: 30px;
+    }
   }
 }

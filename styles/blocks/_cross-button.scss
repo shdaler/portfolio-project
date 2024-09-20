@@ -6,7 +6,7 @@
   border-radius: var(--border-radius-large);
 
   @include hover {
-    background-color: var(--color-accent);
+    background-color: purple;
     &::before,
     &::after {
       content: "";

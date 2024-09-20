@@ -197,7 +197,7 @@ svg * {
   padding: 0 !important;
   white-space: nowrap !important;
   -webkit-clip-path: inset(100%) !important;
-          clip-path: inset(100%) !important;
+  clip-path: inset(100%) !important;
   clip: rect(0 0 0 0) !important;
   overflow: hidden !important;
 }
@@ -288,12 +288,12 @@ h3 {
 }
 @media (hover: hover) {
   .burger-button:hover {
-    background-color: purple;
+    background-color: rgb(15, 0, 128);
   }
 }
 @media (hover: none) {
   .burger-button:active {
-    background-color: purple;
+    background-color: rgb(0, 15, 128);
   }
 }
 .burger-button::after {
@@ -327,24 +327,24 @@ h3 {
   justify-content: space-between;
   align-items: center;
   -moz-column-gap: 156px;
-       column-gap: 156px;
+  column-gap: 156px;
 }
 @media (max-width: 1023px) {
   .header__inner {
     -moz-column-gap: 130px;
-         column-gap: 130px;
+    column-gap: 130px;
   }
 }
 @media (max-width: 880px) {
   .header__inner {
     -moz-column-gap: 82px;
-         column-gap: 82px;
+    column-gap: 82px;
   }
 }
 @media (max-width: 767px) {
   .header__inner {
     -moz-column-gap: 80px;
-         column-gap: 80px;
+    column-gap: 80px;
   }
 }
 @media (max-width: 1023px) {
@@ -375,18 +375,18 @@ h3 {
   display: flex;
   align-items: center;
   -moz-column-gap: 80px;
-       column-gap: 80px;
+  column-gap: 80px;
 }
 @media (max-width: 1280px) {
   .header__menu-list {
     -moz-column-gap: 40px;
-         column-gap: 40px;
+    column-gap: 40px;
   }
 }
 @media (max-width: 1023px) {
   .header__menu-list {
     -moz-column-gap: 35px;
-         column-gap: 35px;
+    column-gap: 35px;
   }
 }
 .header__menu-link {
@@ -420,7 +420,7 @@ h3 {
   display: flex;
   align-items: center;
   -moz-column-gap: 23px;
-       column-gap: 23px;
+  column-gap: 23px;
 }
 @media (max-width: 1023px) {
   .header__soc1als-item {
@@ -439,23 +439,26 @@ h3 {
 }
 @media (hover: hover) {
   .cross-button:hover {
-    background-color: purple;
+    background-color: rgb(6, 128, 0);
   }
-  .cross-button:hover::before, .cross-button:hover::after {
+  .cross-button:hover::before,
+  .cross-button:hover::after {
     content: "";
     background-color: #ffffff;
   }
 }
 @media (hover: none) {
   .cross-button:active {
-    background-color: purple;
+    background-color: rgb(0, 128, 13);
   }
-  .cross-button:active::before, .cross-button:active::after {
+  .cross-button:active::before,
+  .cross-button:active::after {
     content: "";
     background-color: #ffffff;
   }
 }
-.cross-button::before, .cross-button::after {
+.cross-button::before,
+.cross-button::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -512,7 +515,7 @@ h3 {
   justify-content: space-between;
   align-items: start;
   -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
 }
 @media (max-width: 767px) {
   .hero__main {
@@ -569,4 +572,4 @@ h3 {
     order: -1;
     margin-bottom: 30px;
   }
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */

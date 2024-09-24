@@ -14,8 +14,8 @@
   }
 
   &--transparent {
-    color: red;
-    border: yellow;
-    background-color: transparent;
+    color: var(--color-light);
+    border-color: white;
+    background: transparent;
   }
 }

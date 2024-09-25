@@ -650,8 +650,13 @@ h3 {
 .project-card__body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 .project-card__image {
   margin-bottom: 44px;
+}
+.project-card__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 15px;
 }/*# sourceMappingURL=styles.css.map */

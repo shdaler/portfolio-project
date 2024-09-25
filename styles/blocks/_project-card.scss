@@ -20,10 +20,16 @@
   &__body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
 
   &__image {
     margin-bottom: 44px;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 15px;
   }
 }

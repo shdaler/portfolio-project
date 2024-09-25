@@ -620,4 +620,16 @@ h3 {
     order: -1;
     margin-bottom: 30px;
   }
+}
+
+.projects__list:not(:last-child) {
+  margin-bottom: 200px;
+}
+
+.project-card {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  min-height: 699px;
 }/*# sourceMappingURL=styles.css.map */

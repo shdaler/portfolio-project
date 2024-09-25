@@ -16,4 +16,14 @@
     mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
     mask-composite: exclude;
   }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__image {
+    margin-bottom: 44px;
+  }
 }

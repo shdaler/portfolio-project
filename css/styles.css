@@ -646,4 +646,12 @@ h3 {
           mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
           mask-composite: exclude;
+}
+.project-card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.project-card__image {
+  margin-bottom: 44px;
 }/*# sourceMappingURL=styles.css.map */

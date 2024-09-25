@@ -4,7 +4,9 @@
     overflow-x: hidden;
   }
 
-  &:not(:last-child) {
-    margin-bottom: 65px;
+  &__header {
+    &:not(:last-child) {
+      margin-bottom: 65px;
+    }
   }
 }

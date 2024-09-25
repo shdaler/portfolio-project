@@ -510,6 +510,9 @@ h3 {
 .section--hidden-x {
   overflow-x: hidden;
 }
+.section:not(:last-child) {
+  margin-bottom: 65px;
+}
 
 .hero {
   display: flex;

@@ -3,4 +3,8 @@
   &--hidden-x {
     overflow-x: hidden;
   }
+
+  &:not(:last-child) {
+    margin-bottom: 65px;
+  }
 }

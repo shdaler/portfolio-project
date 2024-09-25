@@ -627,9 +627,23 @@ h3 {
 }
 
 .project-card {
+  position: relative;
   display: flex;
   justify-content: space-between;
   -moz-column-gap: 30px;
        column-gap: 30px;
   min-height: 699px;
+  padding: 45px;
+}
+.project-card:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: var(--border-radius);
+  border: 1px solid transparent;
+  background: var(--color-accent) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+          mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
 }/*# sourceMappingURL=styles.css.map */

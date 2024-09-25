@@ -1,6 +1,19 @@
 .project-card {
+  position: relative;
   display: flex;
   justify-content: space-between;
   column-gap: 30px;
   min-height: 699px;
+  padding: 45px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: var(--border-radius);
+    border: 1px solid transparent;
+    background: var(--color-accent) border-box;
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+  }
 }

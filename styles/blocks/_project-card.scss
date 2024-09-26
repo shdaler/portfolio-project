@@ -31,5 +31,14 @@
     flex-direction: column;
     justify-content: space-between;
     row-gap: 15px;
+    margin-bottom: 72px;
+  }
+
+  &__name {
+    color: var(--color-light) !important;
+  }
+
+  &__button {
+    display: flex;
   }
 }

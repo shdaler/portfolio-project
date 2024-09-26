@@ -651,7 +651,6 @@ h3 {
 .project-card__body {
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 .project-card__image {
   margin-bottom: 44px;
@@ -668,7 +667,6 @@ h3 {
 }
 .project-card__button {
   display: flex;
-  position: absolute;
   justify-content: space-between;
-  bottom: 0;
+  margin-top: auto;
 }/*# sourceMappingURL=styles.css.map */

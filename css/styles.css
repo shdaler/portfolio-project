@@ -667,4 +667,5 @@ h3 {
 }
 .project-card__button {
   display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=styles.css.map */

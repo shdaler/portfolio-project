@@ -20,6 +20,7 @@
   &__body {
     display: flex;
     flex-direction: column;
+    position: relative;
   }
 
   &__image {
@@ -40,6 +41,8 @@
 
   &__button {
     display: flex;
+    position: absolute;
     justify-content: space-between;
+    bottom: 0;
   }
 }

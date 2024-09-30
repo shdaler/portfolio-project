@@ -24,6 +24,9 @@
 
   &__image {
     margin-bottom: 44px;
+    @include desktop {
+      height: auto;
+    }
   }
 
   &__title {

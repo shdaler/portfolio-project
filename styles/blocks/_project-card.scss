@@ -6,6 +6,10 @@
   min-height: 699px;
   padding: 45px;
 
+  @include desktop {
+    padding: 40px;
+  }
+
   @include tablet {
     min-height: 615px;
     padding: 36px;

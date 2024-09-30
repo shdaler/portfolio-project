@@ -554,6 +554,11 @@ h3 {
 .section__header:not(:last-child) {
   margin-bottom: 65px;
 }
+@media (max-width: 767px) {
+  .section__header:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 
 .hero {
   display: flex;

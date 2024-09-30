@@ -51,4 +51,18 @@
     justify-content: space-between;
     margin-top: auto;
   }
+
+  &__button-github {
+    .mobile-text {
+      display: none;
+    }
+  }
+  @include tablet {
+    .desktop-text {
+      display: none;
+    }
+    .mobile-text {
+      display: inline;
+    }
+  }
 }

@@ -685,4 +685,15 @@ h3 {
   display: flex;
   justify-content: space-between;
   margin-top: auto;
+}
+.project-card__button-github .mobile-text {
+  display: none;
+}
+@media (max-width: 1023px) {
+  .project-card .desktop-text {
+    display: none;
+  }
+  .project-card .mobile-text {
+    display: inline;
+  }
 }/*# sourceMappingURL=styles.css.map */

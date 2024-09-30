@@ -641,6 +641,12 @@ h3 {
   min-height: 699px;
   padding: 45px;
 }
+@media (max-width: 1023px) {
+  .project-card {
+    min-height: 615px;
+    padding: 36px;
+  }
+}
 .project-card:before {
   content: "";
   position: absolute;

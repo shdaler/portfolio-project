@@ -6,6 +6,11 @@
   min-height: 699px;
   padding: 45px;
 
+  @include tablet {
+    min-height: 615px;
+    padding: 36px;
+  }
+
   &:before {
     content: "";
     position: absolute;

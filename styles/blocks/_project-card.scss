@@ -6,6 +6,11 @@
   min-height: 699px;
   padding: 45px;
 
+  @include mobile-small {
+    min-height: 398px !important;
+    column-gap: 15px;
+  }
+
   @include tablet {
     min-height: 615px;
     padding: 30px;
@@ -16,6 +21,9 @@
     position: absolute;
     inset: 0;
     border-radius: var(--border-radius);
+    @include mobile-small {
+      border-radius: var(--border-radius-small);
+    }
     border: 1px solid transparent;
     background: var(--color-accent) border-box;
     mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
@@ -32,6 +40,9 @@
     @include mobile {
       width: auto;
     }
+    @include mobile-small {
+      margin-bottom: 25px;
+    }
 
     @include desktop {
       width: 100%;
@@ -45,6 +56,10 @@
     justify-content: space-between;
     row-gap: 15px;
     margin-bottom: 72px;
+    @include mobile-small {
+      row-gap: 8px;
+      margin-bottom: 25px;
+    }
   }
 
   &__name {

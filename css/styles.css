@@ -655,15 +655,10 @@ h3 {
   min-height: 699px;
   padding: 45px;
 }
-@media (max-width: 1280px) {
-  .project-card {
-    padding: 40px;
-  }
-}
 @media (max-width: 1023px) {
   .project-card {
     min-height: 615px;
-    padding: 36px;
+    padding: 30px;
   }
 }
 .project-card:before {
@@ -685,14 +680,15 @@ h3 {
 .project-card__image {
   margin-bottom: 44px;
 }
-@media (max-width: 1280px) {
-  .project-card__image {
-    height: auto;
-  }
-}
 @media (max-width: 767px) {
   .project-card__image {
     width: auto;
+  }
+}
+@media (max-width: 1280px) {
+  .project-card__image {
+    width: 100%;
+    height: auto;
   }
 }
 .project-card__title {

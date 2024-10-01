@@ -6,13 +6,9 @@
   min-height: 699px;
   padding: 45px;
 
-  @include desktop {
-    padding: 40px;
-  }
-
   @include tablet {
     min-height: 615px;
-    padding: 36px;
+    padding: 30px;
   }
 
   &:before {
@@ -33,11 +29,13 @@
 
   &__image {
     margin-bottom: 44px;
-    @include desktop {
-      height: auto;
-    }
     @include mobile {
       width: auto;
+    }
+
+    @include desktop {
+      width: 100%;
+      height: auto;
     }
   }
 

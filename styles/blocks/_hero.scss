@@ -52,6 +52,9 @@
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
   }
+  .nowrap {
+    white-space: nowrap;
+  }
 
   &__description {
     font-size: 18px;

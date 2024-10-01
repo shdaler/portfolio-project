@@ -202,7 +202,7 @@ svg * {
   overflow: hidden !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 430px) {
   .hidden-mobile {
     display: none !important;
   }
@@ -322,7 +322,7 @@ h3 {
 .grid--12 {
   --gridColumns: 12;
 }
-@media (max-width: 767px) {
+@media (max-width: 430px) {
   .grid--2 {
     --gridColumns: 1;
   }
@@ -368,7 +368,7 @@ h3 {
     padding-top: 30px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 430px) {
   .header {
     padding-top: 18px;
   }
@@ -392,7 +392,7 @@ h3 {
          column-gap: 82px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 430px) {
   .header__inner {
     -moz-column-gap: 80px;
          column-gap: 80px;
@@ -559,7 +559,7 @@ h3 {
 .section__header:not(:last-child) {
   margin-bottom: 65px;
 }
-@media (max-width: 767px) {
+@media (max-width: 430px) {
   .section__header:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -576,7 +576,7 @@ h3 {
   -moz-column-gap: 30px;
        column-gap: 30px;
 }
-@media (max-width: 767px) {
+@media (max-width: 430px) {
   .hero__main {
     flex-direction: column;
   }
@@ -587,7 +587,7 @@ h3 {
     height: auto;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 430px) {
   .hero__image {
     order: -1;
     width: 100%;
@@ -601,7 +601,7 @@ h3 {
   max-width: 700px;
   row-gap: 35px;
 }
-@media (max-width: 767px) {
+@media (max-width: 430px) {
   .hero__body {
     display: contents;
   }
@@ -609,7 +609,7 @@ h3 {
 .hero__title {
   color: var(--color-light);
 }
-@media (max-width: 767px) {
+@media (max-width: 430px) {
   .hero__title {
     order: -2;
     margin-bottom: 16px;
@@ -626,7 +626,7 @@ h3 {
   font-size: 18px;
   line-height: normal;
 }
-@media (max-width: 767px) {
+@media (max-width: 430px) {
   .hero__description {
     order: -1;
     margin-bottom: 30px;
@@ -681,7 +681,7 @@ h3 {
     height: auto;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 430px) {
   .project-card__image {
     width: auto;
   }
@@ -712,7 +712,7 @@ h3 {
     display: inline;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 430px) {
   .project-card .desktop-text {
     display: none;
   }

@@ -36,6 +36,9 @@
     @include desktop {
       height: auto;
     }
+    @include mobile {
+      width: auto;
+    }
   }
 
   &__title {
@@ -62,6 +65,15 @@
     }
   }
   @include tablet {
+    .desktop-text {
+      display: none;
+    }
+    .mobile-text {
+      display: inline;
+    }
+  }
+
+  @include mobile {
     .desktop-text {
       display: none;
     }

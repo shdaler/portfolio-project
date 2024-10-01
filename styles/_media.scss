@@ -9,6 +9,12 @@ $mobile-above: 768px;
 $mobile: 767px;
 $mobile-small: 430px;
 
+@mixin desktop-above {
+  @media (min-width: $desktop-above) {
+    @content;
+  }
+}
+
 @mixin desktop {
   @media (max-width: $desktop) {
     @content;

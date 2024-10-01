@@ -13,6 +13,9 @@
   }
 
   &__image {
+    @include desktop-above {
+      width: fit-content;
+    }
     @include tablet {
       max-width: 50%;
       height: auto;

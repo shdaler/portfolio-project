@@ -1,5 +1,8 @@
 .section {
   padding-block: var(--section-padding-y);
+  @include mobile-small {
+    padding-block-end: 50px;
+  }
   &--hidden-x {
     overflow-x: hidden;
   }

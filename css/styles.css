@@ -753,4 +753,10 @@ h3 {
   .project-card .mobile-text {
     display: inline;
   }
+}
+
+.technologies {
+  display: flex;
+  flex-direction: column;
+  row-gap: 65px;
 }/*# sourceMappingURL=styles.css.map */

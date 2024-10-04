@@ -759,4 +759,30 @@ h3 {
   display: flex;
   flex-direction: column;
   row-gap: 65px;
+}
+.technologies__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.technologies__progress-bar {
+  position: relative;
+  width: 100%;
+  height: 24px;
+  background-color: #162950;
+  border-radius: var(--border-radius-small);
+}
+.technologies__progress-bar span {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  transform: scale(0);
+  border-radius: var(--border-radius-small);
+  background: var(--color-accent);
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+@keyframes animate {
+  100% {
+    transform: scale(1);
+  }
 }/*# sourceMappingURL=styles.css.map */

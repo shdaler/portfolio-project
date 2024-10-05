@@ -786,5 +786,17 @@ h3 {
   }
 }
 .technologies__progress-bar span.html {
-  width: 70%;
+  width: 990px;
+}
+.technologies__progress-bar span.CSS-Sass-Tailwind {
+  width: 990px;
+}
+.technologies__progress-bar span.JavaScript-TypeScript {
+  width: 660px;
+}
+.technologies__progress-bar span.html {
+  width: 330px;
+}
+.technologies__progress-bar span.html {
+  width: 990px;
 }/*# sourceMappingURL=styles.css.map */

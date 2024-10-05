@@ -764,6 +764,7 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-block-end: -52px;
 }
 .technologies__progress-bar {
   position: relative;

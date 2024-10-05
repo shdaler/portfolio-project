@@ -20,7 +20,6 @@
   &__progress-bar span {
     position: absolute;
     height: 100%;
-    width: 50%;
     transform: scale(0);
     border-radius: var(--border-radius-small);
     background: var(--color-accent);
@@ -31,5 +30,9 @@
     100% {
       transform: scale(1);
     }
+  }
+
+  &__progress-bar span.html {
+    width: 70%;
   }
 }

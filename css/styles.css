@@ -785,7 +785,7 @@ h3 {
     transform: scale(1);
   }
 }
-.technologies__progress-bar span.html {
+.technologies__progress-bar span.Html {
   width: 990px;
 }
 .technologies__progress-bar span.CSS-Sass-Tailwind {
@@ -794,9 +794,9 @@ h3 {
 .technologies__progress-bar span.JavaScript-TypeScript {
   width: 660px;
 }
-.technologies__progress-bar span.html {
+.technologies__progress-bar span.UI-design-in-Figma {
   width: 330px;
 }
-.technologies__progress-bar span.html {
+.technologies__progress-bar span.React {
   width: 990px;
 }/*# sourceMappingURL=styles.css.map */

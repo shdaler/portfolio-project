@@ -760,6 +760,9 @@ h3 {
   flex-direction: column;
   row-gap: 65px;
 }
+.technologies:not(:last-child) {
+  margin-bottom: 200px;
+}
 .technologies__title {
   display: flex;
   flex-direction: row;
@@ -786,8 +789,11 @@ h3 {
     transform: scale(1);
   }
 }
+.technologies__progress-bar span {
+  filter: var(--drop-shadow);
+}
 .technologies__progress-bar span.Html {
-  width: 990px;
+  width: 90%;
 }
 .technologies__progress-bar span.CSS-Sass-Tailwind {
   width: 990px;

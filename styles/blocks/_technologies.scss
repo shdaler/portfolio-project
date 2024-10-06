@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: column;
   row-gap: 65px;
+  &:not(:last-child) {
+    margin-bottom: 200px;
+  }
 
   &__title {
     display: flex;
@@ -33,8 +36,11 @@
     }
   }
 
+  &__progress-bar span {
+    filter: var(--drop-shadow);
+  }
   &__progress-bar span.Html {
-    width: 990px;
+    width: 90%;
   }
   &__progress-bar span.CSS-Sass-Tailwind {
     width: 990px;

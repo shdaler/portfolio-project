@@ -760,6 +760,11 @@ h3 {
   flex-direction: column;
   row-gap: 65px;
 }
+@media (max-width: 430px) {
+  .technologies {
+    row-gap: 52px;
+  }
+}
 .technologies:not(:last-child) {
   margin-bottom: 200px;
 }
@@ -768,6 +773,11 @@ h3 {
   flex-direction: row;
   justify-content: space-between;
   margin-block-end: -52px;
+}
+@media (max-width: 430px) {
+  .technologies__title {
+    margin-block-end: -39px;
+  }
 }
 .technologies__progress-bar {
   position: relative;

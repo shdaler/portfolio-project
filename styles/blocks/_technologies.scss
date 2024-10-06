@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: column;
   row-gap: 65px;
+  @include mobile-small {
+    row-gap: 52px;
+  }
   &:not(:last-child) {
     margin-bottom: 200px;
   }
@@ -11,6 +14,9 @@
     flex-direction: row;
     justify-content: space-between;
     margin-block-end: -52px;
+    @include mobile-small {
+      margin-block-end: -39px;
+    }
   }
 
   &__progress-bar {

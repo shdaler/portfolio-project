@@ -328,6 +328,9 @@ h3 {
     --gridColumns: 1;
   }
 }
+.grid--3 {
+  gap: 40px;
+}
 
 .burger-button {
   padding: 0;
@@ -816,4 +819,9 @@ h3 {
 }
 .technologies__progress-bar span.React {
   width: 30%;
+}
+
+.additional-skills__skill {
+  font-weight: 600;
+  color: var(--color-light);
 }/*# sourceMappingURL=styles.css.map */

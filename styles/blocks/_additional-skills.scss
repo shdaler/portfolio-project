@@ -2,5 +2,20 @@
   &__skill {
     font-weight: 600;
     color: var(--color-light);
+    padding-left: 40px;
+    @include fluid-text(30, 16);
+    position: relative;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      background: var(--color-accent);
+      border-radius: 50%;
+    }
   }
 }

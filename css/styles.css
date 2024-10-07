@@ -824,4 +824,19 @@ h3 {
 .additional-skills__skill {
   font-weight: 600;
   color: var(--color-light);
+  padding-left: 40px;
+  font-size: clamp(16px, 1.5625vw, 30px);
+  position: relative;
+}
+.additional-skills__skill:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: var(--color-accent);
+  border-radius: 50%;
 }/*# sourceMappingURL=styles.css.map */

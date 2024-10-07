@@ -564,7 +564,7 @@ h3 {
 }
 @media (max-width: 430px) {
   .section {
-    padding-block-end: 50px;
+    padding-block: 50px;
   }
 }
 .section--hidden-x {

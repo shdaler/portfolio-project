@@ -18,5 +18,8 @@
   }
   &--3 {
     gap: 40px;
+    @include mobile-small {
+      --gridColumns: 2;
+    }
   }
 }

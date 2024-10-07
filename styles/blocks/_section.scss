@@ -15,4 +15,9 @@
       }
     }
   }
+  &__title {
+    @include mobile-small {
+      max-width: 280px;
+    }
+  }
 }

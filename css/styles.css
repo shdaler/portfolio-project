@@ -578,6 +578,11 @@ h3 {
     margin-bottom: 30px;
   }
 }
+@media (max-width: 430px) {
+  .section__title {
+    max-width: 280px;
+  }
+}
 
 .hero {
   display: flex;
@@ -827,11 +832,16 @@ h3 {
 }
 
 .additional-skills__skill {
+  position: relative;
   font-weight: 600;
   color: var(--color-light);
   padding-left: 40px;
   font-size: clamp(16px, 1.5625vw, 30px);
-  position: relative;
+}
+@media (max-width: 430px) {
+  .additional-skills__skill {
+    padding-left: 30px;
+  }
 }
 .additional-skills__skill:before {
   content: "";
@@ -844,4 +854,10 @@ h3 {
   height: 20px;
   background: var(--color-accent);
   border-radius: 50%;
+}
+@media (max-width: 430px) {
+  .additional-skills__skill:before {
+    width: 16px;
+    height: 16px;
+  }
 }/*# sourceMappingURL=styles.css.map */

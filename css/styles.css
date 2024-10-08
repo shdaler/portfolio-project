@@ -888,14 +888,13 @@ h3 {
 .about-me__list li {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  position: relative;
   width: 24px;
   height: 24px;
   background: var(--color-accent);
-  text-align: center;
-  line-height: 1.2;
-  position: relative;
   border-radius: 50%;
-  margin: 0 10px;
+  margin: 0;
 }
 .about-me__list li:before {
   content: attr(data-year);
@@ -913,5 +912,5 @@ h3 {
   left: 50%;
   transform: translateX(-50%);
   width: 200px; /* Adjust as needed */
-  text-align: center;
+  text-align: left;
 }/*# sourceMappingURL=styles.css.map */

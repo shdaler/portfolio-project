@@ -1,8 +1,10 @@
 .about-me {
   max-width: 100%;
   margin: 0 auto;
+
   &__list {
-    width: 100%;
+    width: 70%;
+    float: left;
     height: 5px;
     list-style: none;
     margin: 80px auto;
@@ -17,8 +19,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-
       position: relative;
       width: 24px;
       height: 24px;
@@ -26,32 +26,34 @@
       border-radius: 50%;
       margin: 0;
       z-index: 1;
-      flex-grow: 0;
-      flex-shrink: 0;
-      flex-basis: auto;
+
+      &:before,
+      &:after {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        white-space: normal;
+        word-wrap: break-word;
+      }
 
       &:before {
         content: attr(data-year);
         font-size: 16px;
-        position: absolute;
         top: -30px; /* Adjust as needed */
-        left: 0;
-        transform: translateX(-50%);
       }
 
       &:after {
         content: attr(data-text);
         font-size: 14px;
-        position: absolute;
         top: 30px; /* Adjust as needed */
-        left: 50%;
-        transform: translateX(-50%);
         max-width: 200px;
-        text-align: start;
-        white-space: normal;
-        overflow: hidden;
-        word-wrap: break-word;
       }
     }
+  }
+  &__text {
+    width: 100%; // Allow data-text to use the full width of the container
+    float: left; // Ensure it stays within the container
+    margin-top: 20px; // Add some spacing from the timeline
   }
 }

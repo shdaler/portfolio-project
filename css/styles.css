@@ -43,7 +43,7 @@ body,
    Убираем внешние отступы вертикали нужным тегам,
    у которых есть атрибут class
   */
-:where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl):where([class]) {
+:where(h1, h2, h3, .about-me__list li:before, h4, h5, h6, p, ul, ol, dl):where([class]) {
   margin-block: 0;
 }
 
@@ -239,7 +239,8 @@ a {
 
 h1,
 h2,
-h3 {
+h3,
+.about-me__list li:before {
   font-weight: 600;
   color: var(--color-light);
 }
@@ -252,7 +253,7 @@ h2 {
   font-size: clamp(20px, 2.3958333333vw, 46px);
 }
 
-h3 {
+h3, .about-me__list li:before {
   font-size: clamp(16px, 1.5625vw, 30px);
 }
 
@@ -864,7 +865,7 @@ h3 {
 }
 
 .about-me__list {
-  width: 85%;
+  width: 84%;
   float: left;
   height: 5px;
   list-style: none;
@@ -896,7 +897,6 @@ h3 {
 }
 .about-me__list li:before {
   content: attr(data-year);
-  font-size: 16px;
   top: -30px; /* Adjust as needed */
 }
 .about-me__list li:after {

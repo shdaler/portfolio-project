@@ -1,6 +1,6 @@
 .about-me {
   &__list {
-    width: 85%;
+    width: 84%;
     float: left;
     height: 5px;
     list-style: none;
@@ -34,7 +34,7 @@
 
       &:before {
         content: attr(data-year);
-        font-size: 16px;
+        @extend h3;
         top: -30px; /* Adjust as needed */
       }
 

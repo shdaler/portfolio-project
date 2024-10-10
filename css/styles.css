@@ -863,16 +863,12 @@ h3 {
   }
 }
 
-.about-me {
-  max-width: 100%;
-  margin: 0 auto;
-}
 .about-me__list {
-  width: 70%;
+  width: 85%;
   float: left;
   height: 5px;
   list-style: none;
-  margin: 80px auto;
+  margin: 30px auto;
   background: var(--color-light);
   position: relative;
   display: flex;
@@ -894,11 +890,9 @@ h3 {
 }
 .about-me__list li:before, .about-me__list li:after {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  white-space: normal;
-  word-wrap: break-word;
+  left: 0%;
+  width: 190px;
+  text-align: left;
 }
 .about-me__list li:before {
   content: attr(data-year);
@@ -909,10 +903,4 @@ h3 {
   content: attr(data-text);
   font-size: 14px;
   top: 30px; /* Adjust as needed */
-  max-width: 200px;
-}
-.about-me__text {
-  width: 100%;
-  float: left;
-  margin-top: 20px;
 }/*# sourceMappingURL=styles.css.map */

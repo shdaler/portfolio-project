@@ -12,6 +12,10 @@
     align-items: center;
     padding: 0;
 
+    @include tablet {
+      width: 83%;
+    }
+
     li {
       display: flex;
       flex-direction: column;
@@ -28,8 +32,11 @@
       &:after {
         position: absolute;
         left: 0%;
-        width: 190px;
+        width: 188px;
         text-align: left;
+        @include tablet {
+          width: 165px;
+        }
       }
 
       &:before {
@@ -41,7 +48,7 @@
       &:after {
         content: attr(data-text);
         font-size: 14px;
-        top: 30px; /* Adjust as needed */
+        top: 30px;
       }
     }
   }

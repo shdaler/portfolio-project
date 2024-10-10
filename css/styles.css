@@ -877,6 +877,11 @@ h3, .about-me__list li:before {
   align-items: center;
   padding: 0;
 }
+@media (max-width: 1023px) {
+  .about-me__list {
+    width: 83%;
+  }
+}
 .about-me__list li {
   display: flex;
   flex-direction: column;
@@ -892,8 +897,13 @@ h3, .about-me__list li:before {
 .about-me__list li:before, .about-me__list li:after {
   position: absolute;
   left: 0%;
-  width: 190px;
+  width: 188px;
   text-align: left;
+}
+@media (max-width: 1023px) {
+  .about-me__list li:before, .about-me__list li:after {
+    width: 165px;
+  }
 }
 .about-me__list li:before {
   content: attr(data-year);
@@ -902,5 +912,5 @@ h3, .about-me__list li:before {
 .about-me__list li:after {
   content: attr(data-text);
   font-size: 14px;
-  top: 30px; /* Adjust as needed */
+  top: 30px;
 }/*# sourceMappingURL=styles.css.map */

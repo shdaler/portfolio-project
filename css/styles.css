@@ -874,6 +874,7 @@ h3 {
 }
 .about-me__timeline h3 {
   position: relative;
+  margin-block: 0px;
 }
 .about-me__timeline h3::after {
   content: "";
@@ -898,7 +899,10 @@ h3 {
   transform: translateY(-50%);
   z-index: 2;
 }
+.about-me__timeline:last-of-type h3::after {
+  content: none;
+}
 .about-me p {
   position: relative;
-  padding-top: 22px;
+  padding-top: 48px;
 }/*# sourceMappingURL=styles.css.map */

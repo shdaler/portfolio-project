@@ -11,7 +11,7 @@
 
     h3 {
       position: relative;
-
+      margin-block: 0px;
       &::after {
         content: "";
         display: block;
@@ -21,6 +21,7 @@
         position: absolute;
         margin-block-start: 22px;
       }
+
       &::before {
         content: "";
         display: block;
@@ -36,9 +37,12 @@
         z-index: 2;
       }
     }
+    &:last-of-type h3::after {
+      content: none;
+    }
   }
   p {
     position: relative;
-    padding-top: 22px;
+    padding-top: 48px;
   }
 }

@@ -882,7 +882,7 @@ h3 {
   height: 5px;
   background: var(--color-light);
   position: absolute;
-  margin-block-start: 23px;
+  margin-block-start: 22px;
 }
 .about-me__timeline h3::before {
   content: "";

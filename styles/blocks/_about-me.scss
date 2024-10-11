@@ -1,54 +1,39 @@
 .about-me {
   &__list {
-    width: 84%;
-    float: left;
-    height: 5px;
-    list-style: none;
-    margin: 30px auto;
-    background: var(--color-light);
-    position: relative;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
+    flex-direction: row;
+  }
+  &__timeline {
+    position: relative;
+    margin-bottom: 20px;
 
-    @include tablet {
-      width: 83%;
-    }
-
-    li {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    h3 {
       position: relative;
-      width: 24px;
-      height: 24px;
-      background: var(--color-accent);
-      border-radius: 50%;
-      margin: 0;
-      z-index: 1;
-
-      &:before,
-      &:after {
+      padding-left: 30px;
+      margin-bottom: 10px;
+      &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: white;
         position: absolute;
-        left: 0%;
-        width: 188px;
-        text-align: left;
-        @include tablet {
-          width: 165px;
-        }
+        top: 50%;
+        left: 30%;
+        transform: translateY(-50%);
       }
-
-      &:before {
-        content: attr(data-year);
-        @extend h3;
-        top: -30px; /* Adjust as needed */
-      }
-
-      &:after {
-        content: attr(data-text);
-        font-size: 14px;
-        top: 30px;
+      &::before {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: red;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
       }
     }
   }

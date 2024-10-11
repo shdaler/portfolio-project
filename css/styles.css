@@ -43,7 +43,7 @@ body,
    Убираем внешние отступы вертикали нужным тегам,
    у которых есть атрибут class
   */
-:where(h1, h2, h3, .about-me__list li:before, h4, h5, h6, p, ul, ol, dl):where([class]) {
+:where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl):where([class]) {
   margin-block: 0;
 }
 
@@ -239,8 +239,7 @@ a {
 
 h1,
 h2,
-h3,
-.about-me__list li:before {
+h3 {
   font-weight: 600;
   color: var(--color-light);
 }
@@ -253,7 +252,7 @@ h2 {
   font-size: clamp(20px, 2.3958333333vw, 46px);
 }
 
-h3, .about-me__list li:before {
+h3 {
   font-size: clamp(16px, 1.5625vw, 30px);
 }
 
@@ -865,52 +864,39 @@ h3, .about-me__list li:before {
 }
 
 .about-me__list {
-  width: 84%;
-  float: left;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.about-me__timeline {
+  position: relative;
+  margin-bottom: 20px;
+}
+.about-me__timeline h3 {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+.about-me__timeline h3::after {
+  content: "";
+  display: block;
+  width: 100%;
   height: 5px;
-  list-style: none;
-  margin: 30px auto;
-  background: var(--color-light);
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translateY(-50%);
 }
-@media (max-width: 1023px) {
-  .about-me__list {
-    width: 83%;
-  }
-}
-.about-me__list li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
+.about-me__timeline h3::before {
+  content: "";
+  display: block;
   width: 24px;
   height: 24px;
-  background: var(--color-accent);
   border-radius: 50%;
-  margin: 0;
-  z-index: 1;
-}
-.about-me__list li:before, .about-me__list li:after {
+  background: red;
   position: absolute;
-  left: 0%;
-  width: 188px;
-  text-align: left;
-}
-@media (max-width: 1023px) {
-  .about-me__list li:before, .about-me__list li:after {
-    width: 165px;
-  }
-}
-.about-me__list li:before {
-  content: attr(data-year);
-  top: -30px; /* Adjust as needed */
-}
-.about-me__list li:after {
-  content: attr(data-text);
-  font-size: 14px;
-  top: 30px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }/*# sourceMappingURL=styles.css.map */

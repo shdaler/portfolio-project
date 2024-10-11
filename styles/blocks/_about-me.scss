@@ -4,9 +4,10 @@
     display: flex;
     flex-direction: row;
   }
+
   &__timeline {
     position: relative;
-    margin-bottom: 20px;
+    width: 100%;
 
     h3 {
       position: relative;
@@ -19,7 +20,6 @@
         background: var(--color-light);
         position: absolute;
         margin-block-start: 23px;
-        border-radius: 25px;
       }
       &::before {
         content: "";

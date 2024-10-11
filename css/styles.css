@@ -882,7 +882,8 @@ h3 {
   height: 5px;
   background: var(--color-light);
   position: absolute;
-  margin-block-start: 15px;
+  margin-block-start: 23px;
+  border-radius: 25px;
 }
 .about-me__timeline h3::before {
   content: "";
@@ -892,9 +893,13 @@ h3 {
   border-radius: 50%;
   background: var(--color-accent);
   position: absolute;
-  margin-block-start: 15px;
+  margin-block-start: 23px;
   top: 110%;
   left: 0;
   transform: translateY(-50%);
   z-index: 2;
+}
+.about-me p {
+  position: relative;
+  padding-top: 20px;
 }/*# sourceMappingURL=styles.css.map */

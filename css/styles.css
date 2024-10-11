@@ -874,19 +874,15 @@ h3 {
 }
 .about-me__timeline h3 {
   position: relative;
-  padding-left: 30px;
-  margin-bottom: 10px;
 }
 .about-me__timeline h3::after {
   content: "";
   display: block;
   width: 100%;
   height: 5px;
-  background-color: white;
+  background: var(--color-light);
   position: absolute;
-  top: 50%;
-  left: 30%;
-  transform: translateY(-50%);
+  margin-block-start: 15px;
 }
 .about-me__timeline h3::before {
   content: "";
@@ -894,9 +890,11 @@ h3 {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: red;
+  background: var(--color-accent);
   position: absolute;
-  top: 50%;
+  margin-block-start: 15px;
+  top: 110%;
   left: 0;
   transform: translateY(-50%);
+  z-index: 2;
 }/*# sourceMappingURL=styles.css.map */

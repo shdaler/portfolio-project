@@ -947,4 +947,19 @@ h3 {
     padding-top: 0;
     padding-bottom: 23px;
   }
+}
+
+.footer__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.footer__soc1als-list {
+  display: flex;
+  gap: 10px;
 }/*# sourceMappingURL=styles.css.map */

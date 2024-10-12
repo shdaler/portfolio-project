@@ -1,0 +1,16 @@
+.footer {
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  &__soc1als-list {
+    display: flex;
+    gap: 10px;
+  }
+}

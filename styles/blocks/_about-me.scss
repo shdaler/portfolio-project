@@ -31,8 +31,11 @@
         position: absolute;
         margin-block-start: 22px;
         @include mobile {
-          margin-left: 71px;
-          height: 5px;
+          display: flex;
+          width: 2px;
+          margin-left: 73px;
+          height: 100%;
+          margin-block-start: 0;
         }
       }
 
@@ -50,9 +53,13 @@
         transform: translateY(-50%);
         z-index: 2;
         @include mobile {
-          width: 12px;
-          height: 12px;
+          width: 14px;
+          height: 14px;
           margin-left: 66px;
+          position: absolute;
+          margin-block-start: 0;
+          top: 0px;
+          transform: translateY(0px);
         }
       }
     }
@@ -63,5 +70,8 @@
   p {
     position: relative;
     padding-top: 48px;
+    @include mobile {
+      margin-left: 71px;
+    }
   }
 }

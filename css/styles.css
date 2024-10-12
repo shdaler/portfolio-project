@@ -903,8 +903,11 @@ h3 {
 }
 @media (max-width: 767px) {
   .about-me__timeline h3::after {
-    margin-left: 71px;
-    height: 5px;
+    display: flex;
+    width: 2px;
+    margin-left: 73px;
+    height: 100%;
+    margin-block-start: 0;
   }
 }
 .about-me__timeline h3::before {
@@ -923,9 +926,13 @@ h3 {
 }
 @media (max-width: 767px) {
   .about-me__timeline h3::before {
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     margin-left: 66px;
+    position: absolute;
+    margin-block-start: 0;
+    top: 0px;
+    transform: translateY(0px);
   }
 }
 .about-me__timeline:last-of-type h3::after {
@@ -934,4 +941,9 @@ h3 {
 .about-me p {
   position: relative;
   padding-top: 48px;
+}
+@media (max-width: 767px) {
+  .about-me p {
+    margin-left: 71px;
+  }
 }/*# sourceMappingURL=styles.css.map */

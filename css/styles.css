@@ -949,6 +949,9 @@ h3 {
   }
 }
 
+.footer {
+  padding-block-end: 60px;
+}
 .footer__body {
   display: flex;
   justify-content: space-between;
@@ -957,7 +960,7 @@ h3 {
 .footer__list {
   display: flex;
   flex-direction: row;
-  gap: 24px;
+  gap: 100px;
   color: var(--color-light);
 }
 .footer li span {
@@ -970,4 +973,5 @@ h3 {
   display: flex;
   -moz-column-gap: 23px;
        column-gap: 23px;
+  margin-left: 100px;
 }/*# sourceMappingURL=styles.css.map */

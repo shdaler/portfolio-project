@@ -16,7 +16,6 @@
     }
 
     h3 {
-      display: flex;
       position: relative;
       margin-block: 0px;
       @include mobile {
@@ -69,7 +68,7 @@
   }
   p {
     position: relative;
-    padding-top: 48px;
+    padding: 48px 30px 0 0;
     @include mobile {
       margin-left: 71px;
       padding-top: 0;

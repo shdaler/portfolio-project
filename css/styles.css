@@ -945,5 +945,7 @@ h3 {
 @media (max-width: 767px) {
   .about-me p {
     margin-left: 71px;
+    padding-top: 0;
+    padding-bottom: 23px;
   }
 }/*# sourceMappingURL=styles.css.map */

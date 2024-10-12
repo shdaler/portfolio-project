@@ -72,6 +72,8 @@
     padding-top: 48px;
     @include mobile {
       margin-left: 71px;
+      padding-top: 0;
+      padding-bottom: 23px;
     }
   }
 }

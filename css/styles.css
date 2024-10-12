@@ -868,13 +868,29 @@ h3 {
   display: flex;
   flex-direction: row;
 }
+@media (max-width: 767px) {
+  .about-me__list {
+    flex-direction: column;
+  }
+}
 .about-me__timeline {
   position: relative;
   width: 100%;
 }
+@media (max-width: 767px) {
+  .about-me__timeline {
+    display: flex;
+  }
+}
 .about-me__timeline h3 {
+  display: flex;
   position: relative;
   margin-block: 0px;
+}
+@media (max-width: 767px) {
+  .about-me__timeline h3 {
+    display: flex;
+  }
 }
 .about-me__timeline h3::after {
   content: "";
@@ -884,6 +900,12 @@ h3 {
   background: var(--color-light);
   position: absolute;
   margin-block-start: 22px;
+}
+@media (max-width: 767px) {
+  .about-me__timeline h3::after {
+    margin-left: 71px;
+    height: 5px;
+  }
 }
 .about-me__timeline h3::before {
   content: "";
@@ -898,6 +920,13 @@ h3 {
   left: 0;
   transform: translateY(-50%);
   z-index: 2;
+}
+@media (max-width: 767px) {
+  .about-me__timeline h3::before {
+    width: 12px;
+    height: 12px;
+    margin-left: 66px;
+  }
 }
 .about-me__timeline:last-of-type h3::after {
   content: none;

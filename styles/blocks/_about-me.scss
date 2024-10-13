@@ -75,4 +75,7 @@
       padding-bottom: 23px;
     }
   }
+  &__timeline:last-of-type p {
+    padding-right: 0;
+  }
 }

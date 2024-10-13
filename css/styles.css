@@ -966,6 +966,11 @@ h3 {
   gap: 100px;
   color: var(--color-light);
 }
+@media (max-width: 880px) {
+  .footer__list {
+    gap: 50px;
+  }
+}
 .footer li span {
   background: var(--color-accent);
   -webkit-background-clip: text;

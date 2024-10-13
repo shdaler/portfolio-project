@@ -10,6 +10,10 @@
     flex-direction: row;
     gap: 100px;
     color: var(--color-light);
+
+    @include mobile-big {
+      gap: 50px;
+    }
   }
   li span {
     background: var(--color-accent);

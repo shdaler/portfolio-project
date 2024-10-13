@@ -14,12 +14,13 @@
   li span {
     background: var(--color-accent);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     display: inline-block;
   }
   &__soc1als-list {
     display: flex;
     column-gap: 23px;
-    margin-left: 100px;
+    margin-left: 50px;
   }
 }

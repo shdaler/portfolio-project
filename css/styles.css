@@ -966,6 +966,7 @@ h3 {
 .footer li span {
   background: var(--color-accent);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   display: inline-block;
 }
@@ -973,5 +974,5 @@ h3 {
   display: flex;
   -moz-column-gap: 23px;
        column-gap: 23px;
-  margin-left: 100px;
+  margin-left: 50px;
 }/*# sourceMappingURL=styles.css.map */

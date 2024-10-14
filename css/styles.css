@@ -685,7 +685,7 @@ h3 {
 @media (max-width: 1023px) {
   .project-card {
     min-height: 615px;
-    padding: 30px;
+    padding: 20px;
   }
 }
 .project-card:before {
@@ -1012,7 +1012,7 @@ h3 {
   .footer__soc1als {
     grid-column: 2/3;
     grid-row: 2/1;
-    align-self: end;
+    align-self: center;
   }
 }
 .footer__soc1als-list {

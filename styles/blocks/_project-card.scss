@@ -13,7 +13,7 @@
 
   @include tablet {
     min-height: 615px;
-    padding: 30px;
+    padding: 20px;
   }
 
   &:before {
@@ -70,6 +70,8 @@
     display: flex;
     justify-content: space-between;
     margin-top: auto;
+    @include mobile-small {
+    }
   }
 
   &__button-github {

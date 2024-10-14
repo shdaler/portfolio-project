@@ -15,26 +15,33 @@
     color: var(--color-light);
 
     @include mobile-big {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 50px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 30px;
+      row-gap: 40px;
     }
   }
   &__contacts {
-    @include mobile-big {
-      &:first-child {
-        order: 1;
-        align-self: flex-start;
+    &:first-child {
+      @include mobile-big {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        align-self: start;
       }
-      &:nth-child(2) {
-        order: 2; // Move the second contact to the third position
-        align-self: flex-start;
+    }
+    &:nth-child(2) {
+      @include mobile-big {
+        grid-column: 2 / 3;
+        grid-row: 2 / 2;
+        align-self: start;
       }
-      &:nth-child(3) {
-        order: 2; // Move the third contact to the second position
-        align-self: flex-end;
+    }
+    &:nth-child(3) {
+      @include mobile-big {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        align-self: end;
       }
     }
   }
@@ -49,9 +56,9 @@
 
   &__soc1als {
     @include mobile-big {
-      order: 3;
-      align-self: flex-end;
-      flex: 1 1 100%;
+      grid-column: 2 / 3;
+      grid-row: 2 / 1;
+      align-self: end;
     }
   }
   &__soc1als-list {

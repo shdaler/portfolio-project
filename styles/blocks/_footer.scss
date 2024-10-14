@@ -16,7 +16,9 @@
 
     @include mobile-big {
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
       gap: 50px;
     }
   }
@@ -24,15 +26,15 @@
     @include mobile-big {
       &:first-child {
         order: 1;
-        flex: 1 1 100%;
+        align-self: flex-start;
       }
       &:nth-child(2) {
-        order: 3; // Move the second contact to the third position
-        flex: 1 1 100%;
+        order: 2; // Move the second contact to the third position
+        align-self: flex-start;
       }
       &:nth-child(3) {
         order: 2; // Move the third contact to the second position
-        flex: 1 1 100%;
+        align-self: flex-end;
       }
     }
   }
@@ -47,7 +49,8 @@
 
   &__soc1als {
     @include mobile-big {
-      order: 2;
+      order: 3;
+      align-self: flex-end;
       flex: 1 1 100%;
     }
   }

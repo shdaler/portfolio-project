@@ -52,6 +52,15 @@
         align-self: end;
       }
     }
+    a {
+      transition: color 0.3s ease;
+      &:hover {
+        color: transparent;
+        background: var(--color-accent);
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+    }
   }
 
   li span {

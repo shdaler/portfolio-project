@@ -13,8 +13,11 @@
     flex-direction: row;
     gap: 75px;
     color: var(--color-light);
-
     @include mobile-big {
+      gap: 40px;
+    }
+
+    @include mobile {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto auto;
@@ -29,21 +32,21 @@
   }
   &__contacts {
     &:first-child {
-      @include mobile-big {
+      @include mobile {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
         align-self: start;
       }
     }
     &:nth-child(2) {
-      @include mobile-big {
+      @include mobile {
         grid-column: 2 / 3;
         grid-row: 2 / 2;
         align-self: start;
       }
     }
     &:nth-child(3) {
-      @include mobile-big {
+      @include mobile {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
         align-self: end;
@@ -60,7 +63,7 @@
   }
 
   &__soc1als {
-    @include mobile-big {
+    @include mobile {
       grid-column: 2 / 3;
       grid-row: 2 / 1;
       align-self: center;
@@ -69,5 +72,8 @@
   &__soc1als-list {
     display: flex;
     gap: 23px;
+    @include mobile-big {
+      gap: 20px;
+    }
   }
 }

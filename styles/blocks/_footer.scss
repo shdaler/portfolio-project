@@ -4,17 +4,40 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include mobile-big {
+      flex-direction: column;
+    }
   }
   &__list {
     display: flex;
     flex-direction: row;
-    gap: 100px;
+    gap: 75px;
     color: var(--color-light);
 
     @include mobile-big {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
       gap: 50px;
     }
   }
+  &__contacts {
+    @include mobile-big {
+      &:first-child {
+        order: 1;
+        flex: 1 1 100%;
+      }
+      &:nth-child(2) {
+        order: 3; // Move the second contact to the third position
+        flex: 1 1 100%;
+      }
+      &:nth-child(3) {
+        order: 2; // Move the third contact to the second position
+        flex: 1 1 100%;
+      }
+    }
+  }
+
   li span {
     background: var(--color-accent);
     -webkit-background-clip: text;
@@ -22,9 +45,24 @@
     color: transparent;
     display: inline-block;
   }
+
+  &__soc1als {
+    @include mobile-big {
+      display: flex;
+      flex-direction: row;
+      order: 2;
+      flex: 1 1 100%;
+    }
+  }
   &__soc1als-list {
     display: flex;
-    column-gap: 23px;
-    margin-left: 50px;
+    flex-direction: row;
+    gap: 23px;
+
+    @include mobile-big {
+      order: 2;
+      margin-bottom: 10px;
+      flex: 1 1 100%;
+    }
   }
 }

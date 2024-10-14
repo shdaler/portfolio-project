@@ -17,7 +17,6 @@
     @include mobile-big {
       display: flex;
       flex-direction: column;
-      flex-wrap: wrap;
       gap: 50px;
     }
   }
@@ -48,21 +47,12 @@
 
   &__soc1als {
     @include mobile-big {
-      display: flex;
-      flex-direction: row;
       order: 2;
       flex: 1 1 100%;
     }
   }
   &__soc1als-list {
     display: flex;
-    flex-direction: row;
     gap: 23px;
-
-    @include mobile-big {
-      order: 2;
-      margin-bottom: 10px;
-      flex: 1 1 100%;
-    }
   }
 }

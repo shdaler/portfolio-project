@@ -975,7 +975,6 @@ h3 {
   .footer__list {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 50px;
   }
 }
@@ -1002,21 +1001,11 @@ h3 {
 }
 @media (max-width: 880px) {
   .footer__soc1als {
-    display: flex;
-    flex-direction: row;
     order: 2;
     flex: 1 1 100%;
   }
 }
 .footer__soc1als-list {
   display: flex;
-  flex-direction: row;
   gap: 23px;
-}
-@media (max-width: 880px) {
-  .footer__soc1als-list {
-    order: 2;
-    margin-bottom: 10px;
-    flex: 1 1 100%;
-  }
 }/*# sourceMappingURL=styles.css.map */

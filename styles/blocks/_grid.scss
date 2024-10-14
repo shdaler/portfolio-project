@@ -18,6 +18,10 @@
   }
   &--3 {
     gap: 40px;
+    @include mobile {
+      gap: 20px;
+      row-gap: 40px;
+    }
     @include mobile-small {
       --gridColumns: 2;
       gap: 20px;

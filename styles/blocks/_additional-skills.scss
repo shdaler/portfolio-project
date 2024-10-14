@@ -4,6 +4,10 @@
     font-weight: 600;
     color: var(--color-light);
     padding-left: 40px;
+
+    @include mobile {
+      gap: 25px;
+    }
     @include mobile-small {
       padding-left: 30px;
     }

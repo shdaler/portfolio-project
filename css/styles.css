@@ -283,6 +283,10 @@ h3 {
   border-color: white;
   background: transparent;
 }
+.button:hover {
+  background-color: var(--color-accent-hover);
+  color: var(--color-light);
+}
 
 .grid {
   --gridColumns: 1;

@@ -70,10 +70,12 @@
     display: flex;
     justify-content: space-between;
     margin-top: auto;
-    @include mobile-small {
+    &:hover {
+      box-shadow: 0px 10px 30px 0px rgba(0, 178, 255, 0.35);
+      color: red;
+      background: white;
     }
   }
-
   &__button-github {
     .mobile-text {
       display: none;

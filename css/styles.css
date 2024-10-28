@@ -708,6 +708,7 @@ h3 {
           mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
           mask-composite: exclude;
+  z-index: 1;
 }
 @media (max-width: 430px) {
   .project-card:before {
@@ -757,11 +758,20 @@ h3 {
   display: flex;
   justify-content: space-between;
   margin-top: auto;
+  z-index: 2;
 }
-.project-card__button:hover {
+.project-card__button-website:hover {
   box-shadow: 0px 10px 30px 0px rgba(0, 178, 255, 0.35);
-  color: red;
-  background: white;
+}
+@media (hover: hover) {
+  .project-card__button-github:hover {
+    box-shadow: 0px 10px 30px 0px rgba(0, 178, 255, 0.35);
+  }
+}
+@media (hover: none) {
+  .project-card__button-github:active {
+    box-shadow: 0px 10px 30px 0px rgba(0, 178, 255, 0.35);
+  }
 }
 .project-card__button-github .mobile-text {
   display: none;

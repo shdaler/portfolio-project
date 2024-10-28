@@ -28,6 +28,7 @@
     background: var(--color-accent) border-box;
     mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
     mask-composite: exclude;
+    z-index: 1;
   }
 
   &__body {
@@ -70,17 +71,22 @@
     display: flex;
     justify-content: space-between;
     margin-top: auto;
+    z-index: 2;
+  }
+  &__button-website {
     &:hover {
       box-shadow: 0px 10px 30px 0px rgba(0, 178, 255, 0.35);
-      color: red;
-      background: white;
     }
   }
   &__button-github {
+    @include hover {
+      box-shadow: 0px 10px 30px 0px rgba(0, 178, 255, 0.35);
+    }
     .mobile-text {
       display: none;
     }
   }
+
   @include tablet {
     .desktop-text {
       display: none;

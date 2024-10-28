@@ -1075,6 +1075,16 @@ h3 {
   line-height: 60px;
   font-size: 20px;
 }
+@media (hover: hover) {
+  .gotopbtn:hover {
+    background-color: purple;
+  }
+}
+@media (hover: none) {
+  .gotopbtn:active {
+    background-color: purple;
+  }
+}
 @media (max-width: 430px) {
   .gotopbtn {
     display: none;
